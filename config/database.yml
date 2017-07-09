@@ -1,0 +1,23 @@
+development: &default
+  adapter: postgresql
+  database: cybele_test_development
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  host: localhost
+  port: 5432
+  username: cybele_test
+  password: cybele_test
+
+test:
+  <<: *default
+  database: cybele_test_test
+
+production:
+  <<: *default
+  database: cybele_test_production 
+
+staging:
+  <<: *default
+  database: cybele_test_staging   
