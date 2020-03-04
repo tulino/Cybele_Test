@@ -78,7 +78,7 @@ gem 'rollbar', '~> 2.7.1'
 
 # App server
 # gem 'unicorn', '~> 4.9.0'
-gem 'puma', '~> 3.4.0'
+gem "puma " , " > = 3.12.4 "
 
 # Backgorund jobs
 # Sidekiq
